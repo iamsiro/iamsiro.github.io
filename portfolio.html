@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Portfolio
+      Portfolio - I am Siro
     </title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -36,7 +37,7 @@
               <a class="inline-block py-2 px-4 text-black no-underline" href="index.html">Home</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 font-bold hover:text-underline py-2 px-4" href="#">Portfolio &#129145;</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 font-bold hover:text-underline py-2 px-4" href="#">Portfolio &uarr;</a> <!-- not working for mobile &#129145; -->
             </li>
           </ul>
           <button
@@ -65,7 +66,7 @@
         <div class="grid-item">
           
           <p class="ad_ihz2 pr-4 text-black font-bold">Python:</p>
-          <a href="#chd_nlp" class="underline mr-3">CHd NLP</a> <a href="#more_ai" class="underline mr-3">Sentiment Anaysis</a> <a href="#ocr" class="underline mr-3">OCR</a>
+          <a href="#chd_nlp" class="underline mr-3">CHd NLP</a> <a href="#more_ai" class="underline mr-3">Sentiment Analysis</a> <a href="#ocr" class="underline mr-3">OCR</a>
         </div>
 
         <div class="grid-item">
@@ -92,7 +93,7 @@
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-4">
         My Projects
       </h1>
-      <div class="grid-container">
+      <div class="grid-container ihz" style="grid-template-columns: 4fr 5fr;">
 
         <div class="grid-item">
           <p class="pr-4 text-black font-bold">Python Projects:</p> 
@@ -163,9 +164,9 @@
                  Natural Language Processing
               </h3>
               <p class="text-center text-gray-600 text-sm lg:text-base">
-                Application of various NLP-Consepts to mainly <b>Swiss German</b> text. The data was partly written manually by myself and partly collected by parsing / processing publicly available content.<br><br>
+                Application of <b>various NLP-Concepts</b> to mainly <b>Swiss German</b> text. The data was partly written manually by myself and partly collected by parsing / processing publicly available content.<br><br>
 
-                The most important Techniques that were applied are: Classification of Text input to the relevant Intent (using a <b>Neural Network</b> with the <b>Bag of Word Model</b> and various n-grams); Converting text-written Numbers to Integers (using an own written algorithm to consider several variations, namely to handle various dialects); working with <b>Part of Speech (POS)</b> Tags (using a <b>customised Hidden Markov Model)</b>. <br><br>
+                The most important Techniques that were applied are: Classification of Text input to the relevant Intent (using a <b>Neural Network</b> with the <b>Bag of Word Model</b> and various n-grams); Converting text-written Numbers to Integers (using an own written algorithm to consider several variations, namely to handle various dialects); working with <b>Part of Speech (POS)</b> Tags (using a <b>customized Hidden Markov Model)</b>. <br><br>
                 <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -181,9 +182,9 @@
               Translator for Swiss German 
             </h3>
             <p class="text-center text-gray-600 text-sm lg:text-base">
-              There are many different usecases for this this processed and classified data, one of them being a <b>multi-directional translator. </b>It is mainly made for Swiss and Standard German, but can easily be used for <b>any other Language</b>, with an additional step.<br><br>
+              There are many different use-cases for this processed and classified data, one of them being a <b>multi-directional translator. </b>It is mainly made for Swiss and Standard German, but can easily be used for <b>any other Language</b>, with an additional step.<br><br>
 
-              Besides a simple <b>one-word translation</b> from Swiss German to Standard German and vice versa, I am implementing  a Version that allows <b>full sentence translation</b>.  Using the POS Classification and Markov Chains, a <b>correct grammatical structure</b> is maintained for the translation output.
+              Besides a simple <b>one-word translation</b> from Swiss German to Standard German and vice versa, I am currently implementing a Version that allows <b>full sentence translation</b>.  Using the POS Classification and Markov Chains, a <b>correct grammatical structure</b> will be maintained for the translation output.
        
               <br class="md:hidden">
               <br class="md:hidden">
@@ -204,12 +205,12 @@
           <div class="w-full sm:w-1/2 md:pl-12 px-3 md:px-6 center-div">
             <div class="align-middle">
               <h3 class="text-center text-2xl lg:text-3xl text-gray-800 font-bold leading-none mb-6">
-                 Autocompletion Tool 
+                 Auto-completion Tool 
               </h3>
               <p class="text-center text-gray-600 text-sm lg:text-base">
-                Another application of the processed data is an <b>autocompletion</b>, including the option to <b>predict upcomming words</b>. <br><br>
+                Another possible application is an <b>auto-completion</b>, including the option to <b>predict upcoming words</b>. I am also testing methods like the levenshtein distance, to <b>include an auto-correction.</b><br><br>
 
-                I specifically implemented this for the <b>Swiss German Language</b>, mainly using <b>n-grams, as well as a </b>Model based on a Markov Chain</b>. It is built in a way, that it can <b>easily be adapted to any other language,</b> by simply providing plain texts in the desired language to the model.
+                I trained it for <b>Swiss German Words</b>, mainly using <b>n-grams,</b> as well as a Model based on a <b>Markov Chain</b>, however it can <b>easily be adapted to any other language,</b> by providing some plain text.
                <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -226,9 +227,9 @@
             </h3>
             <p class="text-center text-gray-600 text-sm lg:text-base">
                
-              In a first version it was an english voice assistant, incl. <b>Speech Recognition</b> as well as <b>Text to Speech responses.</b> However, I later focused on <b>Swiss German,</b> for which I (mainly due to the lack of voice data) am currently only working with text-input and text (or optional Standard German Speech) output. <br><br>
+              In a first version it was an English voice assistant, incl. <b>Speech Recognition</b> as well as <b>Text to Speech responses.</b> However, I later focused on <b>Swiss German,</b> for which I (mainly due to the lack of voice data) am currently only working with text-input and text (or optional Standard German Speech) output. <br><br>
 
-              Some of the featureas are <b>Navigation,</b> Math and information about the <b>Weather</b> 
+              Some of the features are <b>Navigation,</b> Math and information about the <b>Weather</b> 
               
                It can also <b>answer general questions</b> about things like Countries, People, Dates (incl. <b>parsing of numbers in text format)</b> or dictionary related questions. 
 
@@ -253,9 +254,9 @@
                  Text Recognition "Snipping Tool"
               </h3>
               <p class="text-center text-gray-600 text-sm lg:text-base">
-                Provides a Keyboard Shortcut to chose a part of their screen to perform an <b>OCR (Optical Character Recognition).</b> The text in this area is extracted and whitespaces are handelet, all using a pretrained Neural Network, leading to <b>offline capabilities.</b><br><br>
+                Provides a Keyboard Shortcut to chose a part of their screen to perform an <b>OCR (Optical Character Recognition).</b> The text in this area is extracted and whitespace are handled, all using a pretrained Neural Network, leading to <b>offline capabilities.</b><br><br>
 
-                The text is automatically copied to the <b>Clipboard.</b> Whit an internet connection it can be processed further: For example automatically translated to any other language or <b>used for an online research.</b> This research feature can especially be usefull to automatically provide links to the full source (e.g. a Blog or GitHub Repository) of any input (e.g. a Code Snippet).
+                The text is automatically copied to the <b>Clipboard.</b> Whit an Internet connection it can be processed further: For example automatically translated to any other language or <b>used for an online research.</b> This research feature can especially be useful to automatically provide links to the full source (e.g. a Blog or GitHub Repository) of any input (e.g. a Code Snippet).
                 <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -272,7 +273,7 @@
               <br class="hidden md:block"><br class="hidden md:block">
             </h3>
             <p class="text-center text-gray-600 text-sm lg:text-base">
-              This is the well known logic-based Puzzle Game called Sudoku. There is a Version available with a PyGame <b>GUI</b> and one Version is playable in the Terminal, using no 3rd party libraries. It starts with some given numbers and the player needs to fill in all empty fields following this simple rule: Any number can only occure once in every line, column and separated 3x3 gird. <br><br>
+              This is the well known logic-based Puzzle Game called Sudoku. There is a Version available with a PyGame <b>GUI</b> and one Version is playable in the Terminal, using no 3rd party libraries. It starts with some given numbers and the player needs to fill in all empty fields following this simple rule: Any number can only occur once in every line, column and separated 3x3 gird. <br><br>
 
               <br class="hidden md:flex"> 
 
@@ -300,7 +301,7 @@
               <p class="text-center text-gray-600 text-sm lg:text-base">
                 Well known Tic Tac Toe Game, incl. and AI Player using the <b>optimized MiniMax Algorithm</b> (incl. Alpha / Beta Pruning).
                 <br><br>
-                Including features like <b> live evaluation of the game </b> and suggesting better moves. This might be developped further (e.g. better animated) and <b>adapted to other games like Chess,</b> which is also solved using the MiniMax Algorithm.
+                Including features like <b> live evaluation of the game </b> and suggesting better moves. This might be developed further (e.g. better animated) and <b>adapted to other games like Chess,</b> which is also solved using the MiniMax Algorithm.
                 <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -330,7 +331,7 @@
             </h3>
             <p class="text-center text-gray-600 text-sm lg:text-base">
               A Website to view the Verdicts of the Swiss Federal Court in a more user friendly way and additional features like a remembered <b>Dark Mode</b> (using <b>cookies & localstorage</b>) and a <a class="text-blue-500 underline" href="#chrome_extension">Chrome Extension</a>.  <br><br>
-              First of all, footnotes are inserted instead of the inconvenient long comments in parantheses. Then links and previews (shown on hovering; implemented using <a class="text-blue-500 underline" href="#gesetze_api">my own API</a>) for legislation are generated. Finally it the old website is <b>converted to a responsive design,</b> to make mobile use far more convenient.
+              First of all, footnotes are inserted instead of the inconvenient long comments in parentheses. Then links and previews (shown on hovering; implemented using <a class="text-blue-500 underline" href="#gesetze_api">my own API</a>) for legislation are generated. Finally it the old website is <b>converted to a responsive design,</b> to make mobile use far more convenient.
               <br class="md:hidden">
               <br class="md:hidden">
             </p>
@@ -352,7 +353,7 @@
                 Legislation API
               </h3>
               <p class="text-center text-gray-600 text-sm lg:text-base">
-                For the <a class="text-blue-500 underline" href="#easyBGE">easyBGE Website</a> I wanted to implement a preview on hovering over legislation. There was currently no way to get this data, therefore I bult <b>my own API</b> for this purpose (?==> iwie, dass sie auch öffenltlich verfügbar sei, wohl für v1 Website noch nicht...).<br><br>
+                For the <a class="text-blue-500 underline" href="#easyBGE">easyBGE Website</a> I wanted to implement a preview on hovering over legislation. There was currently no way to get this data, therefore I built <b>my own API</b> for this purpose.<br><br>
 
                 The functionality is pretty straight forward: The user can just use <b>GET-Requests,</b> providing the desired Law and Article (optionally also the Section / Subsection) and will get the data back in <b>JSON format.</b>
                 <br class="md:hidden">
@@ -370,7 +371,7 @@
               Chrome Extension
             </h3>
             <p class="text-center text-gray-600 text-sm lg:text-base">
-              Many users might wanna continue to search the verdicts on Google and therefore reach the outdated website of the Swiss Federal Court, insted of <a class="text-blue-500 underline" href="#easyBGE">my improved Version</a>. Therefore I also decided to develop a chrome extension with the same purpose. <br><br>
+              Many users might wanna continue to search the verdicts on Google and therefore reach the outdated website of the Swiss Federal Court, instead of <a class="text-blue-500 underline" href="#easyBGE">my improved Version</a>. Therefore I also decided to develop a chrome extension with the same purpose. <br><br>
               
               First of all it offers the option, to simply redirect to my website upon visiting a verdict on the official site. Otherwise it provides the core functionality on the same page using <b>DOM-Manipulation.</b> Furthermore I planned some space to potentially use for ads for my Website or third party Customers.
             </p>
@@ -393,7 +394,7 @@
                 Finance Application with Login and SQL
               </h3>
               <p class="text-center text-gray-600 text-sm lg:text-base">
-                Web Application, that allows user to <b>Log In</b>, look up Stock Prices and make transactions. Live data achived by using the <b>Real Time Prices</b> provided by the 3rd party IEX Financial API. <br><br>
+                Web Application, that allows user to <b>Log In</b>, look up Stock Prices and make transactions. Live data achieved by using the <b>Real Time Prices</b> provided by the 3rd party IEX Financial API. <br><br>
 
                 Includes further features like a <b>Responsive Design,</b> full transaction History (using a <b>SQL Database)</b> and the option to add more Money to the account.
                 <br class="md:hidden">
@@ -431,7 +432,7 @@
               <br><br>
               <b>Text analysis & manipulation</b> in plain C, e.g. identifying the "writing-level" of a paragraph or implementing a basic <b>encryption cipher.</b>
               <br><br>
-              <b>Image Filters</b> (Colors, Blur, Orientation) and Edge detection</b> without any libraries, by performing calculations with the single pixle values (e.g. <b>Convolution</b> using the Sobel Operator).
+              <b>Image Filters</b> (Colors, Blur, Orientation) and Edge detection</b> without any libraries, by performing calculations with the single pixel values (e.g. <b>Convolution</b> using the Sobel Operator).
               
               <br><br>                       
             </p>
@@ -455,7 +456,7 @@
               <p class="text-center text-gray-600 text-sm lg:text-base">
                 <b>Handwritten Digit Recognition</b> and detection of 43 different <b>Traffic Signs</b> using <b>Convolutional Neural Networks.</b> 
                 <br><br>
-                <b>Face and Object detection</b> using <b>haar-cascades</b> and CNNs. 
+                <b>Face and Object detection</b> using <b>Haar-cascades</b> and CNNs. 
                 <br><br>
                 <b>Sentiment analysis</b> of current Tweets about a topic using Pythons <b>NLTK Module</b> and live data from the Twitter API. 
                 <br><br>
