@@ -39,10 +39,20 @@
             <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 font-bold hover:text-underline py-2 px-4" href="#">Portfolio &uarr;</a> <!-- not working for mobile &#129145; -->
             </li>
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black no-underline" href="certificates.html">Certificates</a>
+            </li>
           </ul>
+          <style type="text/css">
+            @media screen and (max-width: 769px) {
+              .hidden769 {
+                display: none !important;
+              }
+            }
+          </style>
           <button
             id="navAction" onClick="location.href='#contact_form'"
-            class="mx-auto sm:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 sm:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            class="hidden769 mx-auto sm:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 sm:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Contact Me
           </button>
         </div>
@@ -66,7 +76,7 @@
         <div class="grid-item">
           
           <p class="ad_ihz2 pr-4 text-black font-bold">Python:</p>
-          <a href="#chd_nlp" class="underline mr-3">CHd NLP</a> <a href="#more_ai" class="underline mr-3">Sentiment Analysis</a> <a href="#ocr" class="underline mr-3">OCR</a>
+          <a href="#chd_nlp" class="underline mr-3">CHd NLP</a> <a href="#more_ai" class="underline mr-3">Sentiment</a><a href="#medicine_ai" class="underline mr-3">Medicine</a> <a href="#ocr" class="underline mr-3">OCR</a>
         </div>
 
         <div class="grid-item">
@@ -99,7 +109,7 @@
           <p class="pr-4 text-black font-bold">Python Projects:</p> 
         </div>
         <div class="grid-item">
-          <a href="#chd_nlp" class="underline mr-4">CHd NLP</a> <a href="#ocr" class="underline mr-4">OCR</a> <a href="#sudoku" class="underline mr-4">Game AIs</a>
+          <a href="#chd_nlp" class="underline mr-4">NLP</a> <a href="#medicine_ai" class="underline mr-3">Medicine</a><a href="#ocr" class="underline mr-4">OCR</a> <a href="#sudoku" class="underline mr-4">Games</a>
         </div>
 
         <div class="grid-item">
@@ -166,7 +176,7 @@
               <p class="text-center text-gray-600 text-sm lg:text-base">
                 Application of <b>various NLP-Concepts</b> to mainly <b>Swiss German</b> text. The data was partly written manually by myself and partly collected by parsing / processing publicly available content.<br><br>
 
-                The most important Techniques that were applied are: Classification of Text input to the relevant Intent (using a <b>Neural Network</b> with the <b>Bag of Word Model</b> and various n-grams); Converting text-written Numbers to Integers (using an own written algorithm to consider several variations, namely to handle various dialects); working with <b>Part of Speech (POS)</b> Tags (using a <b>customized Hidden Markov Model)</b>. <br><br>
+                The most important Techniques that were applied are: Classification of Text input to the relevant Intent (using a <b>Neural Network</b> with the <b>Bag of Word Model</b> and various n-grams); Converting text-written Numbers to Integers (using an own written algorithm to consider several variations, namely to handle various dialects); working with <b>Part of Speech (POS)</b> Tags (using a <b>customized Hidden Markov Model)</b>.
                 <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -220,6 +230,8 @@
 
         <br><br><hr><hr><br><br>
 
+        <!-- DAS WOHL WEGLASSEN UND BESSER DAS ANDERE MIT MEDICINE...:
+
         <div id="assistant" class="flex flex-wrap">
           <div class="w-6/6 sm:w-1/2 px-3 md:px-6 md:pr-16 center-div">
             <h3 class="text-center text-2xl lg:text-3xl text-gray-800 font-bold leading-none mb-6">
@@ -239,6 +251,30 @@
           </div>
           <div class="w-full sm:w-1/2 center-div">
             <img class="px-3" src="resources/virtual_asisstant.png">
+          </div>
+        </div>
+
+        <br><br><hr><hr><br><br> 
+
+      -->
+
+        <div id="medicine_ai" class="flex flex-wrap">
+          <div class="w-6/6 sm:w-1/2 px-3 md:px-6 md:pr-16 center-div">
+            <h3 class="text-center text-2xl lg:text-3xl text-gray-800 font-bold leading-none mb-6">
+              AI for Medical Diagnosis
+            </h3>
+            <p class="text-center text-gray-600 text-sm lg:text-base">
+               
+              Two seperate Models to <b>detect various diseases</b> on <b>Brain MRI</b> scans and <b>Chest X-Rays.</b> Real-world datasets were <b>pre-processed</b> (incl. handling of <b>unbalanced training data</b> and performing <b>data augmentation)</b> and used for training.
+              <br><br>
+              Implemented with Keras, using <b>transfer learning</b> on a <b>DenseNet</b> (for the Chest X-Rays) and a <b>3D U-net</b> (for the brain MRIs). Besides the accuracy, the <b>detailed evaluation</b> includes for example <b>sensitivity and specificity</b> as well as <b>Positive / Negative Prediction Values.</b> Furthermore, the <b>AUCROC</b> and the <b>confidence intervals</b> are calculated and analyzed.
+
+              <br class="md:hidden">
+              <br class="md:hidden">
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 center-div">
+            <img class="px-3" src="resources/medicine_ai.png">
           </div>
         </div>
 
@@ -283,7 +319,7 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 center-div">
-            <img class="px-3" src="resources/sudoku.gif">
+            <img class="px-4 sm:ml-2 xl:ml-8" src="resources/sudoku.gif">
           </div>
         </div>
 
@@ -357,7 +393,7 @@
               <p class="text-center text-gray-600 text-sm lg:text-base">
                 For the <a class="text-blue-500 underline" href="#easyBGE">easyBGE Website</a> I wanted to implement a preview on hovering over legislation. There was currently no way to get this data, therefore I built <b>my own API</b> for this purpose.<br><br>
 
-                The functionality is pretty straight forward: The user can just use <b>GET-Requests,</b> providing the desired Law and Article (optionally also the Section / Subsection) and will get the data back in <b>JSON format.</b>
+                The functionality is pretty straight forward: The user can just use <b>GET-Requests,</b> providing the desired Law and Article (optionally also the Section / Subsection) and will get the data back in <b>JSON format,</b> from my <b>parsed and preprocessed</b> database.
                 <br class="md:hidden">
                 <br class="md:hidden">
               </p>
@@ -429,12 +465,13 @@
             <p class="text-center text-gray-600 text-sm lg:text-base">              
               <b>Recover "deleted / missing" files,</b> by reading <b>raw bytes</b>. 
               <br><br>
-              <b>Text analysis & manipulation</b> in C, e.g. identifying the "writing-level" of text or implementing a basic <b>Encryption Cipher.</b>
+              <b>Text analysis & manipulation</b>, e.g. identifying the "writing-level" of any given text or implementing a basic <b>Encryption Cipher.</b>
               <br><br>
-              <b>Image Filters</b> (Colors, Blur, Orientation) and Edge detection</b> without any libraries, by performing calculations with the single pixel values (e.g. <b>Convolution</b> using the Sobel Operator).
+              <b>Image Filters</b> (Colors, Blur, Orientation) and <b>Edge detection</b> using <b>no libraries,</b> by performing calculations with the single pixel values (e.g. <b>Convolution</b> using the Sobel Operator).
               <br><br>                   
               Live <b>Document Scanner / Detector</b> using the <b>OpenCV C++</b> library.
             </p>
+          <br class="md:hidden">
           </div>
           <div class="w-full sm:w-1/2 center-div">
             <img class="px-3" src="resources/c_cpp.png">
@@ -528,7 +565,7 @@
 
         </h3>
       </div>
-
+    </section>
     <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
